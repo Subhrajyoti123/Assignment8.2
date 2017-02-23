@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF0080"
+    tools:context="com.example.somina.myassignment2.MainActivity">
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="match_parent"
+        android:layout_height="70px"
+        android:layout_centerHorizontal="true"
+        android:text="Information"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/txtPrefs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data:"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/storeinformation" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/txtname"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_below="@id/txtInfo"
+        android:hint="Name"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/txtage"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/txtname"
+        android:hint="Age"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/txtphone"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_below="@+id/txtage"
+        android:hint="Phone"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_below="@+id/txtphone"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:id="@+id/txtcity"
+        android:paddingTop="20px"
+        android:hint="City"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/showinformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show"
+        android:layout_marginTop="10px"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtcity"
+        />
+
+    <Button
+        android:id="@+id/storeinformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@+id/showinformation"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
